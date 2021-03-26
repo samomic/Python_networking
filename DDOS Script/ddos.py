@@ -5,7 +5,7 @@ Created on Thu Jan 14 14:54:13 2021
 @author: Samir
 
 This script is purely for own testing purposes. Use it for your own testing.
-Doing DDOS attacks on other people's websites without their permission is illegall.
+Doing DDOS attacks on other people's websites without their permission is illegal.
 """
 
 import threading

@@ -2,6 +2,8 @@
 """
 Created on Fri Jan 15 15:28:21 2021
 
+Server for handling clients and connection
+
 @author: Samir
 """
 

@@ -3,7 +3,7 @@
 Created on Thu Jan 14 16:21:41 2021
 
 This script is purely for own testing purposes. Use it for your own testing.
-Doing port scanning on other people's websites without their permission is illegall.
+Doing port scanning on other people's websites without their permission is illegal.
 
 @author: Samir
 """

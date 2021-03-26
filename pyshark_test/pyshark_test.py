@@ -2,6 +2,8 @@
 """
 Created on Tue Jan 19 16:55:48 2021
 
+Capturing packets on udp port 53 on Wi-Fi network.
+
 @author: Samir
 """
 

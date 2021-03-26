@@ -2,6 +2,8 @@
 """
 Created on Tue Jan 12 16:41:42 2021
 
+Programmatically sending email. Attaching message and attachment (picture).
+
 @author: Samir
 """
 
@@ -22,20 +24,20 @@ with open('password.txt', 'r') as f:
 server.starttls() # encrypting smtp session
 server.ehlo()
     
-server.login('username@example.com', password)
+server.login('username@example.com', password) # enter your email address
 
 
 msg = MIMEMultipart()
 msg['From'] = 'Name'
-msg['To'] = 'receiver@example.com'
-msg['Subject'] = 'Hello from the hotmail!'
+msg['To'] = 'receiver@example.com' # receiver email address
+msg['Subject'] = 'Hello from the python!' # subject of email message
 
 with open('message.txt','r') as f:
     message = f.read()
     
 msg.attach(MIMEText(message, 'plain'))
 
-filename = 'Albert Einstein.jpg'
+filename = 'Albert Einstein.jpg' # provide full path if file not in the same directory
 attachment = open(filename, 'rb')
 
 p = MIMEBase('application', 'octet-stream')
@@ -46,5 +48,5 @@ p.add_header('Content-Disposition', f'attachment; filename={filename}')
 msg.attach(p)
 
 text = msg.as_string()
-server.sendmail('sender@example.com', 'receiver@example.com', text) # tested with sending from live mail to gmail
+server.sendmail('sender@example.com', 'receiver@example.com', text) # successfully tested with sending from live mail to gmail
 server.quit()

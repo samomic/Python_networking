@@ -2,6 +2,8 @@
 """
 Created on Fri Jan 15 16:01:45 2021
 
+Creating new client and communicating on channel
+
 @author: Samir
 """
 
